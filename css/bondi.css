@@ -1,0 +1,266 @@
+:root {
+    --dark : #19283f;
+    --green : #33d1cc;
+    --red : #ff3150;
+    --yellow : #ffc400;
+    --gray : #eff7fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+    background-color: var(--red) ;
+    color: var(--yellow);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    color: var(--yellow);
+}
+
+
+.main-title:after {
+
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+#upBtn {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    background-color: var(--dark);
+    padding: 5px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    display: none;
+    
+  }
+
+
+/* start navbar */
+
+.navbar {
+    background-color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link.active ,
+.navbar .navbar-nav .nav-link:hover ,
+.navbar .navbar-nav .nav-link:focus {
+    color: var(--green);
+    background-color: var(--gray);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green);
+}
+.search svg  {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    font-size: 25px;
+    border-color: #fff;
+}
+.navbar .navbar-toggler:focus {
+box-shadow: none;
+}
+
+/* end navbar */
+
+/* start home  */
+.home {
+    background-color: var(--dark);
+    min-height: calc(100vh - 72px);
+}
+
+.home .main-btn {
+    width:  10rem;
+}
+/* end home  */
+
+/* start services */
+
+.services .icon-holder {
+    height: 200px;
+}
+
+.services .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services .icon-holder .number {
+    font-size: 12rem;
+    color: var(--gray);
+}
+
+.icon-holder .icon {
+    color: var(--green);
+}
+
+.services .feat h4 {
+    color: var(--yellow);
+}
+
+/* end services */
+
+
+/* start our work */
+
+.portfolio {
+    background-color: var(--gray);
+}
+
+.portfolio ul .active {
+    background-color: var(--red);
+    color: var(--yellow);
+    border-radius: 50rem;
+
+}
+
+.portfolio ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.portfolio ul li:not(.active):hover{
+    color: var(--red);
+}
+
+.portfolio .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateY( calc(100% + 5px) );
+}
+
+.portfolio .box:hover::before{
+    transform: translateY(0);
+}
+
+/* end our work */
+
+
+/* start about */
+
+/* end about */
+
+/* start our team */
+
+.our-team {
+    background-color: var(--gray);
+}
+
+.our-team h2 {
+    color: var(--yellow);
+}
+
+.our-team .box h4 {
+    color: white;
+    background-color: var(--green);
+}
+
+/* end our team */
+
+/* start project */
+.project {
+    background-color: var(--dark);
+}
+/* end project */
+
+
+/* start contact */
+
+.contact { 
+    background-color: var(--yellow);
+}
+
+.contact input[type='email']{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.contact input[type='email']:focus {
+    outline: none;
+}
+.contact input::placeholder{
+    color: white;
+}
+
+.contact input[type='submit']{
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+/* end contact */
+
+
+/* start footer */
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer .copyright > span {
+    color: var(--green);
+}
+
+.footer .copyright p span {
+    color: var(--yellow);
+}
+
+.footer .contact-us ul svg {
+    width: 30px;
+    height: 30px;
+}
+
+.footer .contact-us ul li a {
+    color: white;
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+.footer .twitter {
+    background-color: #1da1f2;
+}
+.footer .linkedin {
+    background-color: #0077b5;
+}
+.footer .youtube {
+    background-color: #ff0000;
+}
+
+
+/* end footer */
+
+
